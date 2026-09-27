@@ -1,0 +1,68 @@
+# Repository archives and packaged copies
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Editors and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Training/evaluation datasets and generated spike inputs
+RSTDP/classifier/
+RSTDP/train_spk/
+RSTDP/test_spk/
+RSTDP/img_path.txt
+*.npy
+
+# Model weights, serialized state, and hardware/runtime outputs
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.pkl
+RSTDP/pkl/
+RSTDP/flit_config/
+RSTDP/fpga_weights.txt
+
+# Generated plots and other image outputs
+*.jpg
+*.jpeg
+*.png
+
+# Logs and transient output
+*.log
+logs/
+runs/
+outputs/
+results/
+tmp/
+temp/
+
+# Scratch script
+RSTDP/tmp.py
+
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets*.json
